@@ -3,6 +3,8 @@ s2oauth
 
 **POC Spring security + OAuth plugin for Grails 3**
 
+[![Build Status](https://api.travis-ci.org/enr/s2oauth.png?branch=master)](https://travis-ci.org/enr/s2oauth)
+
 Main differences with the Grails 2 plugin:
 
 - no more dependency on https://github.com/antony/grails-oauth-scribe but some code of that plugin was ported in this
@@ -41,8 +43,10 @@ Create the plugin:
 
 Add the core plugin as dependency in `build.gradle`:
 
-    compile project(':s2oauth')
-    // or "org.grails.plugins:s2oauth:0.1"
+```groovy
+compile project(':s2oauth')
+// or "org.grails.plugins:s2oauth:0.1"
+```
 
 Create the plugin service:
 
