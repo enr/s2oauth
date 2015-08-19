@@ -1,0 +1,5 @@
+.gradle/
+helloworld/build
+s2oauth/build/
+s2oauth-facebook/build/
+s2oauth-dummy/build/
