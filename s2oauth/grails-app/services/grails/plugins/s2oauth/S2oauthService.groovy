@@ -1,18 +1,15 @@
 package grails.plugins.s2oauth
 
 import grails.transaction.Transactional
-
-import grails.plugins.s2oauth.S2oauthProviderService
-import grails.plugins.s2oauth.OauthVersion
-
-import org.scribe.model.Token
-import org.scribe.model.Verifier
 import grails.web.servlet.mvc.GrailsParameterMap
 import grails.plugin.springsecurity.SpringSecurityUtils
 import grails.plugin.springsecurity.userdetails.GormUserDetailsService
 import grails.plugin.springsecurity.userdetails.GrailsUser
 import org.springframework.security.core.authority.SimpleGrantedAuthority
+import org.scribe.model.Token
+import org.scribe.model.Verifier
 
+@SuppressWarnings('PackageName')
 @Transactional
 class S2oauthService {
 
@@ -131,6 +128,7 @@ class S2oauthService {
         return oAuthToken
     }
 
+    @SuppressWarnings('VariableName')
     def userNamed(String username) {
         if (!username) {
             return null
@@ -149,6 +147,7 @@ class S2oauthService {
         return (user != null)
     }
 
+    @SuppressWarnings('VariableName')
     def createUser(command, S2oauthToken oAuthToken) {
         def User = lookupUserClass()
         def user = User.newInstance()

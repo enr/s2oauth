@@ -1,14 +1,13 @@
 package grails.plugins.s2oauth
 
 import grails.plugin.springsecurity.SpringSecurityUtils
+import grails.plugin.springsecurity.userdetails.GrailsUser
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.AuthenticationException
+import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.web.servlet.ModelAndView
 import org.scribe.model.Token
 import org.scribe.model.Verifier
-import grails.plugin.springsecurity.userdetails.GrailsUser
-import org.springframework.security.core.context.SecurityContextHolder
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.apache.commons.lang.StringUtils
 
 class S2oauthController {

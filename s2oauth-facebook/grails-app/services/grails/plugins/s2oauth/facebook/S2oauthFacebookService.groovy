@@ -8,19 +8,15 @@ import grails.plugins.s2oauth.S2oauthException
 import grails.transaction.Transactional
 import grails.converters.JSON
 import org.scribe.model.Token
-import org.scribe.model.Verifier
-import org.scribe.model.OAuthRequest
 import org.scribe.model.Response
-import org.scribe.model.Verb
 import org.scribe.oauth.OAuthService
-import org.scribe.builder.ServiceBuilder
 import org.scribe.builder.api.FacebookApi
 
 @Transactional
 class S2oauthFacebookService extends S2oauthAbstractScribeProviderService {
 
-    private static String PROVIDER_ID = 'facebook'
-    private static String PROFILE_URL = 'https://graph.facebook.com/me'
+    private static final String PROVIDER_ID = 'facebook'
+    private static final String PROFILE_URL = 'https://graph.facebook.com/me'
 
     private OAuthService scribeService
 

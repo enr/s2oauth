@@ -2,13 +2,8 @@ package grails.plugins.s2oauth
 
 import org.scribe.model.Token
 import org.scribe.model.Verifier
-import grails.plugins.s2oauth.OauthVersion
-import grails.plugins.s2oauth.S2oauthProviderConfiguration
 import org.scribe.oauth.OAuthService
 import org.scribe.builder.ServiceBuilder
-import org.scribe.model.OAuthRequest
-import org.scribe.model.Response
-import org.scribe.model.Verb
 
 public abstract class S2oauthAbstractScribeProviderService implements S2oauthProviderService {
 

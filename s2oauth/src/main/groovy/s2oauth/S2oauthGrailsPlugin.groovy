@@ -4,6 +4,7 @@ import grails.plugins.*
 
 import grails.plugins.s2oauth.S2oauthProviderService
 
+@SuppressWarnings('PackageName')
 class S2oauthGrailsPlugin extends Plugin {
 
     // the version or versions of Grails the plugin is designed for
