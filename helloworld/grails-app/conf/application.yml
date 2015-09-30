@@ -65,6 +65,27 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
+
+    plugin:
+        springsecurity:
+            userLookup:
+                userDomainClassName: helloworld.User
+                authorityJoinClassName: helloworld.UserRole
+            authority:
+                className: helloworld.Role
+            securityConfigType: InterceptUrlMap
+            interceptUrlMap:
+                '/':                permitAll
+                '/error':           permitAll
+                '/index':           permitAll
+                '/index.gsp':       permitAll
+                '/shutdown':        permitAll
+                '/assets/**':       permitAll
+                '/**/js/**':        permitAll
+                '/**/css/**':       permitAll
+                '/**/images/**':    permitAll
+                '/**/favicon.ico':  permitAll
+                '/oauth/**':        permitAll
 ---
 hibernate:
     cache:
