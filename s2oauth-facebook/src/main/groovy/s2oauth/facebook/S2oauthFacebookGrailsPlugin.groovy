@@ -2,6 +2,7 @@ package s2oauth.facebook
 
 import grails.plugins.*
 
+@SuppressWarnings('PackageName')
 class S2oauthFacebookGrailsPlugin extends Plugin {
 
     // the version or versions of Grails the plugin is designed for
@@ -42,7 +43,7 @@ Brief summary/description of the plugin.
 
     Closure doWithSpring() { {->
             // TODO Implement runtime spring config (optional)
-        } 
+        }
     }
 
     void doWithDynamicMethods() {
