@@ -78,6 +78,7 @@ grails:
                 '/':                permitAll
                 '/error':           permitAll
                 '/index':           permitAll
+                '/login/auth':      permitAll
                 '/index.gsp':       permitAll
                 '/shutdown':        permitAll
                 '/assets/**':       permitAll

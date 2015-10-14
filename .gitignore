@@ -5,3 +5,4 @@ s2oauth-facebook/build/
 s2oauth-dummy/build/
 
 *.db
+.asscache
